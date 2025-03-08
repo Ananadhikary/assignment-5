@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF]">
+    <section class="px-20 min-h-screen mx-auto  pt-10">
+        <!-- nav bar-->
+        <nav class="bg-[#FFFFFF] shadow-md rounded-xl">
+            <div class="flex  justify-between items-center">
+                <div class="px-6 py-4  flex">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="text-4xl ml-2">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="flex mr-6">
+                    <div class="flex bg-[#F4F7FF]  rounded-2xl p-4">
+                        <img class="w-8" src="assets/checkbox.png" alt="">
+                        <h1 class="font-bold ml-4 text-3xl">23</h1>
+                    </div>
+                    <div class="grid justify-center items-center ml-6 bg-[#F4F7FF] rounded-4xl  px-2 w-16"><img src="assets/theme-btn.png" alt=""></div>
+                </div>
+            </div>
+        </nav>
+        <!-- cards -->
+        <section class="mt-6 flex">
+            <header class="w-4/5 bg-[#FFFFFF] shadow-md rounded-2xl">
+                <main class="pt-6 flex">
+                    <!-- task card-->
+                     <div class="w-1/5 flex p-6 justify-center items-center bg-[#F4F7FF] ml-6 rounded-xl shadow-md">
+                        <img class=" bg-[#FFFFFF] p-4 rounded-4xl" src="assets/checkbox.png" alt="">
+                        <div class="ml-6">
+                            <h4>Task Assigned</h4>
+                            <h1 class="font-bold text-4xl">05</h1>
+                        </div>
+                     </div>
+                     <!-- discover card -->
+                      <div class="shadow-md w-3/5  p-6 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] mx-6 rounded-xl ">
+                        <div class="flex ml-6 items-center">
+                            <img src="assets/board.png" alt="">
+                        <p class="text-[#FFFFFF] text-2xl ml-6">Discover Something <br> New Today!</p>
+                        </div>
+                      </div>
+                      <!-- calendar -->
+                      <div class="w-1/5 mr-6 bg-[#F4F7FF] rounded-xl shadow-md">
+                        <div class="flex p-6 justify-center items-center">
+                            <div class="bg-[#FFFFFF] rounded-4xl mt-2">
+                                <img class="p-4" src="assets/calender.png" alt="">
+                            </div>
+                            <p class="ml-6 text-xl">wed, <br><span class="font-bold">July, 2025</span></p>
+                        </div>
+                      </div> 
+                </main>
+                <!--all task card -->
+                    <main class="mt-20  grid grid-cols-3 gap-6 px-6 pb-8">
+                        <!-- task card 1-->
+                         <div class=" p-6 justify-center items-center bg-[#F4F7FF] rounded-xl shadow-md">
+                            <p class="bg-[#FFFFFF] inline-block p-2">ShopEase</p>
+                            <h1 class="text-2xl font-medium py-4">Fix Mobile Button Issue</h1>
+                            <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                                <div class="divider"></div>
+                                <div class="flex justify-between">
+                                <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
+                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                            </div>
+                         </div>
+                         <!-- task card 2-->
+                         <div class="shadow-md p-6 justify-center items-center bg-[#F4F7FF] rounded-xl">
+                            <p class="bg-[#FFFFFF] inline-block p-2">CloudSync</p>
+                            <h1 class="text-2xl font-medium py-4">Add Dark Mode</h1>
+                            <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                                <div class="divider"></div>
+                            <div class="flex justify-between">
+                                <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
+                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                            </div>
+                         </div>
+                          <!-- task card 3 -->
+                          <div class="shadow-md p-6 justify-center items-center bg-[#F4F7FF] rounded-xl">
+                            <p class="bg-[#FFFFFF] inline-block p-2">SwiftPay</p>
+                            <h1 class="text-2xl font-medium py-4">Optimize Home Page</h1>
+                            <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                                <div class="divider"></div>
+                            <div class="flex justify-between">
+                                <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
+                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                            </div>
+                         </div>
+                          <!-- task card 4-->
+                          <div class="shadow-md p-6 justify-center items-center bg-[#F4F7FF]  rounded-xl">
+                            <p class="bg-[#FFFFFF] inline-block p-2">Meta</p>
+                            <h1 class="text-2xl font-medium py-4">Add new emoji 🤲</h1>
+                            <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                                <div class="divider"></div>
+                            <div class="flex justify-between">
+                                <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
+                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                            </div>
+                         </div>
+                         <!-- task card 5 -->
+                         <div class="shadow-md p-6 justify-center items-center bg-[#F4F7FF]  rounded-xl">
+                            <p class="bg-[#FFFFFF] inline-block p-2">Google LLC</p>
+                            <h1 class="text-2xl font-medium py-4">Integrate OpenAI API </h1>
+                            <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                                <div class="divider"></div>
+                            <div class="flex justify-between">
+                                <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
+                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                            </div>
+                         </div>
+                          <!-- task card 6 -->
+                          <div class="shadow-md p-6 justify-center items-center bg-[#F4F7FF]  rounded-xl">
+                            <p class="bg-[#FFFFFF] inline-block p-2">Glassdoar</p>
+                            <h1 class="text-2xl font-medium py-4">Improve Job searching </h1>
+                            <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                                <div class="divider"></div>
+                            <div class="flex justify-between">
+                                <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
+                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                            </div>
+                         </div>
+                    </main>
+            </header>
+            <!-- history -->
+            <main class="bg-[#FFFFFF] ml-6 w-1/5 shadow-md rounded-2xl">
+                <div class="grid justify-center items-center mt-6">
+                    <div class="flex mb-4">
+                        <img src="assets/activity.png" alt="">
+                        <h2 class="font-medium ml-4">Activity Log</h2>
+                    </div>
+                    <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                </div>
+                <div class="divider"></div>
+                <p>hi</p>
+            </main>
+            </section>
+             
+        </section>
+    </section>
+   
+    
+</body>
+</html>

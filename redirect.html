@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF]">
+    <section class="px-20 min-h-screen mx-auto  pt-10">
+        <nav class="bg-[#FFFFFF] shadow-md rounded-xl">
+            <div class="flex  justify-between items-center">
+                <div class="px-6 py-4  flex">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="text-4xl ml-2">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="flex mr-6">
+                    <div class="flex bg-[#F4F7FF]  rounded-2xl p-4">
+                        <img class="w-8" src="assets/checkbox.png" alt="">
+                        <h1 class="font-bold ml-4 text-3xl">23</h1>
+                    </div>
+                    <div class="grid justify-center items-center ml-6 bg-[#F4F7FF] rounded-4xl  px-2 w-16"><img src="assets/theme-btn.png" alt=""></div>
+                </div>
+            </div>
+        </nav>
+        <h1 class="grid justify-center items-center text-3xl font-bold my-10">Blogs</h1>
+         <!-- blogs -->
+    <main class="pb-8">
+        <!-- question-1 -->
+        <div class="mb-6 p-6 justify-center items-center bg-[#FFFFFF] rounded-xl shadow-md">
+            <p class="bg-[#FFFFFF] p-2 font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</p>
+            <div class="divider"></div>
+            <h1>There are several ways to select an Element in the DOM. document.getElementById is one of many javaScript method to select an element in the DOM. There are few more, such as document.getElementByClassName, querySelector and so on. Must remember, it is not a HTML tag! It is a JavaScript function that helps interact with HTML elements.</h1>
+         </div>
+         <!-- question-2 -->
+        <div class="mb-6 p-6 justify-center items-center bg-[#FFFFFF] rounded-xl shadow-md">
+            <p class="bg-[#FFFFFF] p-2 font-bold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <div class="divider"></div>
+            <h1>
+                The difference between innerHTML, innerText and textContent is - <br>
+                innerHTML gets or sets both text and HTML inside an element. <br>
+                innerText retrieves only the visible text, ignoring hidden content and HTML tags.<br>
+                textContent gets all text, including hidden content, but without any HTML formatting.
+            </h1>
+         </div>
+         <!-- question-3 -->
+        <div class="mb-6 p-6 justify-center items-center bg-[#FFFFFF] rounded-xl shadow-md">
+            <p class="bg-[#FFFFFF] p-2 font-bold text-xl">Question-3: What is event delegation in the DOM?</p>
+            <div class="divider"></div>
+            <h1>Event delegation is when you attach a single event listener to a parent element instead of each child element. The event listener checks which child triggered the event by using event.target. It helps improve performance, especially when elements are dynamically added.</h1>
+         </div>
+         <!-- question-4 -->
+        <div class="mb-6 p-6 justify-center items-center bg-[#FFFFFF] rounded-xl shadow-md">
+            <p class="bg-[#FFFFFF] p-2 font-bold text-xl">Question-4: What is event bubbling in the DOM?</p>
+            <div class="divider"></div>
+            <h1>Event bubbling is when an event triggered on an element "bubbles up" to its parent elements. This means the event is passed from the target element to the parent elements in the DOM hierarchy. It allows parent elements to handle events for their child elements.</h1>
+         </div>
+         <!-- question-5 -->
+        <div class=" p-6 justify-center items-center bg-[#FFFFFF] rounded-xl shadow-md">
+            <p class="bg-[#FFFFFF] p-2 font-bold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <div class="divider"></div>
+            <h1>to Create, we use the function called createElement, and then write inside a parenthesis what we want to add. <br>
+            to add an element on the DOM we use appendChild. <br>
+            to remove we simply use the function called remove. 
+        </h1>
+         </div>
+    </main>
+    </section>
+   
+</body>
+</html>

@@ -19,7 +19,7 @@
                 <div class="flex mr-6">
                     <div class="flex bg-[#F4F7FF]  rounded-2xl p-4">
                         <img class="w-8" src="assets/checkbox.png" alt="">
-                        <h1 class="font-bold ml-4 text-3xl">23</h1>
+                        <h1 id="assignment-done" class="font-bold ml-4 text-3xl">23</h1>
                     </div>
                     <div class="grid justify-center items-center ml-6 bg-[#F4F7FF] rounded-4xl  px-2 w-16"><img src="assets/theme-btn.png" alt=""></div>
                 </div>
@@ -34,7 +34,7 @@
                         <img class=" bg-[#FFFFFF] p-4 rounded-4xl" src="assets/checkbox.png" alt="">
                         <div class="ml-6">
                             <h4>Task Assigned</h4>
-                            <h1 class="font-bold text-4xl">05</h1>
+                            <h1 id="assignment-left" class="font-bold text-4xl">06</h1>
                         </div>
                      </div>
                      <!-- discover card -->
@@ -50,7 +50,8 @@
                             <div class="bg-[#FFFFFF] rounded-4xl mt-2">
                                 <img class="p-4" src="assets/calender.png" alt="">
                             </div>
-                            <p class="ml-6 text-xl">wed, <br><span class="font-bold">July, 2025</span></p>
+                            <p id="currentDate"></p>
+
                         </div>
                       </div> 
                 </main>
@@ -58,74 +59,74 @@
                     <main class="mt-20  grid grid-cols-3 gap-6 px-6 pb-8">
                         <!-- task card 1-->
                          <div class=" p-6 justify-center items-center bg-[#F4F7FF] rounded-xl shadow-md">
-                            <p class="bg-[#FFFFFF] inline-block p-2">ShopEase</p>
+                            <p class="bg-[#FFFFFF] inline-block p-2 rounded-2xl">ShopEase</p>
                             <h1 class="text-2xl font-medium py-4">Fix Mobile Button Issue</h1>
                             <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                                 <div class="divider"></div>
                                 <div class="flex justify-between">
                                 <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
-                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                                <button class="btn-2 btn btn-primary rounded-xl px-6" onclick="disableButton(this)">Completed</button>
                             </div>
                          </div>
                          <!-- task card 2-->
                          <div class="shadow-md p-6 justify-center items-center bg-[#F4F7FF] rounded-xl">
-                            <p class="bg-[#FFFFFF] inline-block p-2">CloudSync</p>
+                            <p class="bg-[#FFFFFF] inline-block p-2 rounded-2xl">CloudSync</p>
                             <h1 class="text-2xl font-medium py-4">Add Dark Mode</h1>
                             <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                                 <div class="divider"></div>
                             <div class="flex justify-between">
                                 <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
-                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                                <button class="btn-2 btn btn-primary rounded-xl px-6" onclick="disableButton(this)">Completed</button>
                             </div>
                          </div>
                           <!-- task card 3 -->
                           <div class="shadow-md p-6 justify-center items-center bg-[#F4F7FF] rounded-xl">
-                            <p class="bg-[#FFFFFF] inline-block p-2">SwiftPay</p>
+                            <p class="bg-[#FFFFFF] inline-block p-2 rounded-2xl">SwiftPay</p>
                             <h1 class="text-2xl font-medium py-4">Optimize Home Page</h1>
                             <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                                 <div class="divider"></div>
                             <div class="flex justify-between">
                                 <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
-                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                                <button class="btn-2 btn btn-primary rounded-xl px-6" onclick="disableButton(this)">Completed</button>
                             </div>
                          </div>
                           <!-- task card 4-->
                           <div class="shadow-md p-6 justify-center items-center bg-[#F4F7FF]  rounded-xl">
-                            <p class="bg-[#FFFFFF] inline-block p-2">Meta</p>
+                            <p class="bg-[#FFFFFF] inline-block p-2 rounded-2xl">Meta</p>
                             <h1 class="text-2xl font-medium py-4">Add new emoji 🤲</h1>
                             <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                                 <div class="divider"></div>
                             <div class="flex justify-between">
                                 <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
-                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                                <button class="btn-2 btn btn-primary rounded-xl px-6" onclick="disableButton(this)">Completed</button>
                             </div>
                          </div>
                          <!-- task card 5 -->
                          <div class="shadow-md p-6 justify-center items-center bg-[#F4F7FF]  rounded-xl">
-                            <p class="bg-[#FFFFFF] inline-block p-2">Google LLC</p>
+                            <p class="bg-[#FFFFFF] inline-block p-2 rounded-2xl">Google LLC</p>
                             <h1 class="text-2xl font-medium py-4">Integrate OpenAI API </h1>
                             <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                                 <div class="divider"></div>
                             <div class="flex justify-between">
                                 <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
-                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                                <button class="btn-2 btn btn-primary rounded-xl px-6" onclick="disableButton(this)">Completed</button>
                             </div>
                          </div>
                           <!-- task card 6 -->
                           <div class="shadow-md p-6 justify-center items-center bg-[#F4F7FF]  rounded-xl">
-                            <p class="bg-[#FFFFFF] inline-block p-2">Glassdoar</p>
+                            <p class="bg-[#FFFFFF] inline-block p-2 rounded-2xl">Glassdoar</p>
                             <h1 class="text-2xl font-medium py-4">Improve Job searching </h1>
                             <p class="bg-[#FFFFFF] p-4 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
                                 <div class="divider"></div>
                             <div class="flex justify-between">
                                 <p>Deadline <br><span class="font-medium">21 march, 2025</span></p>
-                                <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                                <button class="btn-2 btn btn-primary rounded-xl px-6" onclick="disableButton(this)">Completed</button>
                             </div>
                          </div>
                     </main>
@@ -137,7 +138,7 @@
                         <img src="assets/activity.png" alt="">
                         <h2 class="font-medium ml-4">Activity Log</h2>
                     </div>
-                    <button class="btn btn-primary rounded-xl px-6">Completed</button>
+                    <button class="btn btn-primary rounded-xl px-6">Clear history</button>
                 </div>
                 <div class="divider"></div>
                 <p>hi</p>
@@ -147,6 +148,21 @@
         </section>
     </section>
    
+   
     
+    <script>
+        const now = new Date();
+        const day = now.getDate();
+        const month = now.toLocaleString('default', { month: 'long' });
+        const year = now.getFullYear();
+
+        const formattedDate = `${day} ${month}, ${year}`;
+
+        document.getElementById('currentDate').textContent = formattedDate;
+    </script>
+    <script src="btn-2.js"></script>
+    <script src="utility.js"></script>
+    <script src="button.js"></script>
+    <script src="task.js"></script>
 </body>
 </html>
